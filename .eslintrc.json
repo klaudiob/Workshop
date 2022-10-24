@@ -1,0 +1,44 @@
+{
+  "env": {
+    "node": true,
+    "commonjs": true,
+    "es2018": true,
+    "jest": true
+  },
+  "globals": {
+    "document": true,
+    "fetch": true,
+    "location": true
+  },
+  "extends": "eslint:recommended",
+  "parserOptions": {
+    "ecmaVersion": 9
+  },
+  "rules": {
+    "indent": [
+      "error",
+      2
+    ],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "semi": [
+      "error",
+      "always"
+    ],
+    "camelcase": "error",
+    "max-lines-per-function": [
+      "error",
+      {
+        "max": 30,
+        "skipBlankLines": true,
+        "skipComments": true
+      }
+    ]
+  }
+}
